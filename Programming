@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+int sum(int a);
+void main()
+{
+int num, result;
+clrscr();
+printf("enter the number");
+scand("%d",&num);
+result=sum(num);
+printf("sum of the digits in %d is %d\n",num, result);
+getch();
+int sum(int num)
+{
+if(num!=o)
+{
+return(num%10+sum(num/10));
+}
+else
+{
+return 0;
+}
+}
